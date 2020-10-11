@@ -1,61 +1,65 @@
 .grid {
-    max-width: $max-width;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
-  
-  .col {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-  }
-  
-  @for $i from 1 through $grid-columns {
-    .col-#{$i} {
+  margin: 0 auto;
+  max-width: $max-width;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.col {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i} {
     width: percentage($i / $grid-columns);
-    }
+  }
 }
+
 @for $i from 1 through 3 {
-    .offset-col-#{$i} {
-        margin-left: percentage($i / $grid-columns);
-    }
+  .offset-col-#{$i} {
+    margin-left: percentage($i / $grid-columns);
+  }
 }
-  /*
-  medium—upp að 800px
-  */
-  @media (max-width: 799px) {
 
-    @for $i from 1 through $grid-columns {
-        .col-md-#{$i} {
-        width: percentage($i / $grid-columns);
-        }
-    }
-    @for $i from 1 through 3 {
-        .offset-col-md-#{$i} {
-            margin-left: percentage($i / $grid-columns);
-        }
+/*
+medium—upp að 800px
+*/
+
+@media (max-width: 799px) {
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      width: percentage($i / $grid-columns);
     }
   }
-  /*
-  small—upp að 500px
-  */
-  @media (max-width: 499px) {
 
-    @for $i from 1 through $grid-columns {
-        .col-sm-#{$i} {
-        width: percentage($i / $grid-columns);
-        }
-    }
-    @for $i from 1 through 3 {
-        .offset-col-sm-#{$i} {
-            margin-left: percentage($i / $grid-columns);
-        }
+  @for $i from 1 through 3 {
+    .offset-col-md-#{$i} {
+      margin-left: percentage($i / $grid-columns);
     }
   }
+}
+
+/*
+small—upp að 500px
+*/
+@media (max-width: 499px) {
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+
+  @for $i from 1 through 3 {
+    .offset-col-sm-#{$i} {
+      margin-left: percentage($i / $grid-columns);
+    }
+  }
+}

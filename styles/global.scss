@@ -1,41 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-size: 16px;
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
-    color: #222222;
-  }
-  
-  a {
-    color: #222222;
-  }
-  
-  button {
-    background-color: #222222;
-    color: #eeeeee;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    padding: 0.5rem;
-    word-break: initial;
-  
-    transition:
-      color 300ms ease-in-out,
-      background-color 300ms ease-in-out ;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    :hover {
-    background-color: #eeeeee;
-    color: #222222;
-    }
-    :active {
-    background-color: #222222;
-    color: #eeeeee;
-    border: 1px solid #000000;
-    }
+body {
+  color: #222;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #222;
+}
+
+button {
+  background-color: #222;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color: #eee;
+  padding: 0.5rem;
+  transition:
+    color 300ms ease-in-out,
+    background-color 300ms ease-in-out;
+  word-break: initial;
+
+  :hover {
+    background-color: #eee;
+    color: #222;
   }
-  h1, h2, h3, h4 {
-    font-family: 'Montaga', Georgia, serif;
+
+  :active {
+    background-color: #222;
+    border: 1px solid #000;
+    color: #eee;
   }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Montaga', Georgia, serif;
+}

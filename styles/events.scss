@@ -1,69 +1,79 @@
 .events {
-    @include margin-bottom-2-rem;
-  }
-  
-  .events .col {
-    @include margin-bottom-2-rem;
-  }
-  
-  .event {
-    position: relative;
-    
-    width: 100%;
-    height: 100%;
-    min-height: 250px;
-  
-    background-color: $book-color;
-  
-    word-break: break-word;
+  @include margin-bottom-2-rem;
+}
 
-    :last-child {
-        margin-right: 0;
-    }
-    h3 {
-        @include margin-bottom-1-rem;
-    }
-    p {
-        @include margin-bottom-1-rem;
-        font-style: italic;
-    }
-    ul {
-        list-style: none;
-        font-style: italic;
-    }
-    .card {
-        position: absolute;
-        display: flex;
-        left: 0; right: 0; top: 0; bottom: 0;
-        transform-style: preserve-3d;
-        transition: transform 300ms ease-in-out;
-    }
-    :hover .card {
-        transform: rotateY(180deg);
-    }
-    .face {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
-        padding: 0.5rem;
-    }
-    .face.back {
-        transform: rotateY(180deg);
-    }
-    .front {
-        display: flex;
-    }
-    .front h3 {
-        margin: auto;
-        font-size: 2em;
-        text-align: center;
-    }
-    .back {
-        height: 100%;
-  
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+.events .col {
+  @include margin-bottom-2-rem;
+}
+
+.event {
+  background-color: $book-color;
+  height: 100%;
+  min-height: 250px;
+  position: relative;
+  width: 100%;
+  word-break: break-word;
+
+  :last-child {
+    margin-right: 0;
   }
+
+  h3 {
+    @include margin-bottom-1-rem;
+  }
+
+  p {
+    @include margin-bottom-1-rem;
+
+    font-style: italic;
+  }
+
+  ul {
+    font-style: italic;
+    list-style: none;
+  }
+
+  .card {
+    bottom: 0;
+    display: flex;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+  }
+
+  :hover .card {
+    transform: rotateY(180deg);
+  }
+
+  .face {
+    backface-visibility: hidden;
+    height: 100%;
+    padding: 0.5rem;
+    position: absolute;
+    width: 100%;
+  }
+
+  .face.back {
+    transform: rotateY(180deg);
+  }
+
+  .front {
+    display: flex;
+  }
+
+  .front h3 {
+    font-size: 2em;
+    margin: auto;
+    text-align: center;
+  }
+
+  .back {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+  }
+}
