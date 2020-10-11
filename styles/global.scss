@@ -25,19 +25,17 @@
     transition:
       color 300ms ease-in-out,
       background-color 300ms ease-in-out ;
-  }
-  
-  button:hover {
+
+    :hover {
     background-color: #eeeeee;
     color: #222222;
-  }
-  
-  button:active {
+    }
+    :active {
     background-color: #222222;
     color: #eeeeee;
     border: 1px solid #000000;
+    }
   }
-  
   h1, h2, h3, h4 {
     font-family: 'Montaga', Georgia, serif;
   }
