@@ -1,6 +1,5 @@
-  
   header {
-    margin-bottom: 2rem;
+    @include margin-bottom-2-rem;
   
     width: 100%;
     height: 100vh;

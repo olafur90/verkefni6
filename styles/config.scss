@@ -12,3 +12,12 @@ $grid9: 75%;
 $grid10: 83.33333333%;
 $grid11: 91.66666667%;
 $grid12: 100%;
+
+
+$book-color: #cccccc;
+@mixin margin-bottom-1-rem {
+    margin-bottom: 1rem;
+}
+@mixin margin-bottom-2-rem {
+    margin-bottom: 1rem;
+}
