@@ -1,3 +1,5 @@
+@import "config";
+
 header {
   @include margin-bottom-2-rem;
 
@@ -9,7 +11,7 @@ header {
   width: 100%;
 
   .content {
-    color: #eee;
+    color: $eeeWhite;
     margin: auto;
     text-align: center;
     width: 100%;

@@ -5,47 +5,47 @@
     margin-bottom: 1rem; }
 
 .book {
-  margin-right: 1rem;
   margin-bottom: 1rem;
-  width: 100%;
-  height: 100%;
-  min-width: 160px;
+  background-color: #ccc;
   display: flex;
   flex-direction: column;
-  background-color: #cccccc; }
+  height: 100%;
+  margin-right: 1rem;
+  min-width: 160px;
+  width: 100%; }
   .book .image {
     height: 200px;
     overflow: hidden; }
   .book .image img {
-    object-fit: cover;
-    width: 100%;
     height: 200px;
-    transition: transform 300ms ease-in-out; }
+    object-fit: cover;
+    transition: transform 300ms ease-in-out;
+    width: 100%; }
   .book :hover .image img {
     transform: scale(1.3); }
   .book h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; }
   .book h4 {
     margin-bottom: 1rem;
     font-size: 0.875rem;
     font-weight: normal;
     text-transform: uppercase; }
   .book .buy {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: space-between; }
   .book .buy .price {
     margin-right: 0.5rem; }
 
 .book > .content {
-  padding: 0.5rem;
-  border: 1px solid #999999;
+  border: 1px solid #999;
   border-top: 0;
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 0.5rem; }
 
 .events {
   margin-bottom: 1rem; }
@@ -54,11 +54,11 @@
   margin-bottom: 1rem; }
 
 .event {
-  position: relative;
-  width: 100%;
+  background-color: #ccc;
   height: 100%;
   min-height: 250px;
-  background-color: #cccccc;
+  position: relative;
+  width: 100%;
   word-break: break-word; }
   .event :last-child {
     margin-right: 0; }
@@ -68,74 +68,77 @@
     margin-bottom: 1rem;
     font-style: italic; }
   .event ul {
-    list-style: none;
-    font-style: italic; }
+    font-style: italic;
+    list-style: none; }
   .event .card {
-    position: absolute;
+    bottom: 0;
     display: flex;
     left: 0;
+    position: absolute;
     right: 0;
     top: 0;
-    bottom: 0;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out; }
   .event :hover .card {
     transform: rotateY(180deg); }
   .event .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
     backface-visibility: hidden;
-    padding: 0.5rem; }
+    height: 100%;
+    padding: 0.5rem;
+    position: absolute;
+    width: 100%; }
   .event .face.back {
     transform: rotateY(180deg); }
   .event .front {
     display: flex; }
   .event .front h3 {
-    margin: auto;
     font-size: 2em;
+    margin: auto;
     text-align: center; }
   .event .back {
-    height: 100%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     justify-content: space-between; }
 
 * {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
-  font-size: 16px;
+  color: #222;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
-  color: #222222; }
+  font-size: 16px; }
 
 a {
-  color: #222222; }
+  color: #222; }
 
 button {
-  background-color: #222222;
-  color: #eeeeee;
-  border: 1px solid #000000;
+  background-color: #222;
+  border: 1px solid #000;
   border-radius: 5px;
+  color: #eee;
   padding: 0.5rem;
-  word-break: initial;
-  transition: color 300ms ease-in-out, background-color 300ms ease-in-out; }
-  button :hover {
-    background-color: #eeeeee;
-    color: #222222; }
-  button :active {
-    background-color: #222222;
-    color: #eeeeee;
-    border: 1px solid #000000; }
+  transition: color 300ms ease-in-out, background-color 300ms ease-in-out;
+  word-break: initial; }
+  button:hover {
+    background-color: #eee;
+    color: #222; }
+  button:active {
+    background-color: #222;
+    border: 1px solid #000;
+    color: #eee; }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Montaga', Georgia, serif; }
 
 .grid {
-  max-width: 1400px;
   margin: 0 auto;
+  max-width: 1400px;
   overflow: hidden; }
 
 .row {
@@ -195,8 +198,8 @@ h1, h2, h3, h4 {
   margin-left: 25%; }
 
 /*
-  medium—upp að 800px
-  */
+medium—upp að 800px
+*/
 @media (max-width: 799px) {
   .col-md-1 {
     width: 8.33333%; }
@@ -230,8 +233,8 @@ h1, h2, h3, h4 {
     margin-left: 25%; } }
 
 /*
-  small—upp að 500px
-  */
+small—upp að 500px
+*/
 @media (max-width: 499px) {
   .col-sm-1 {
     width: 8.33333%; }
@@ -266,17 +269,17 @@ h1, h2, h3, h4 {
 
 header {
   margin-bottom: 1rem;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-image: url(img/background.jpg);
+  background-attachment: fixed;
+  background-image: url("img/background.jpg");
   background-size: cover;
-  background-attachment: fixed; }
+  display: flex;
+  height: 100vh;
+  width: 100%; }
   header .content {
+    color: #eee;
     margin: auto;
-    width: 100%;
     text-align: center;
-    color: #eeeeee; }
+    width: 100%; }
   header h1 {
     font-size: 6vmax; }
   header h2 {

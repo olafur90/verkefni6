@@ -1,3 +1,5 @@
+@import "config";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,35 +7,35 @@
 }
 
 body {
-  color: #222;
+  color: $Grey222;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
 }
 
 a {
-  color: #222;
+  color: $Grey222;
 }
 
 button {
-  background-color: #222;
-  border: 1px solid #000;
+  background-color: $Grey222;
+  border: 1px solid $Black000;
   border-radius: 5px;
-  color: #eee;
+  color: $eeeWhite;
   padding: 0.5rem;
   transition:
     color 300ms ease-in-out,
     background-color 300ms ease-in-out;
   word-break: initial;
 
-  :hover {
-    background-color: #eee;
-    color: #222;
+  &:hover {
+    background-color: $eeeWhite;
+    color: $Grey222;
   }
 
-  :active {
-    background-color: #222;
-    border: 1px solid #000;
-    color: #eee;
+  &:active {
+    background-color: $Grey222;
+    border: 1px solid $Black000;
+    color: $eeeWhite;
   }
 }
 

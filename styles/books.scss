@@ -1,3 +1,5 @@
+@import "config";
+
 .books {
   @include margin-bottom-2-rem;
 
@@ -58,7 +60,7 @@
 }
 
 .book > .content {
-  border: 1px solid #999;
+  border: 1px solid $book-content;
   border-top: 0;
   display: flex;
   flex: 1;
