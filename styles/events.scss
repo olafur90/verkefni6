@@ -1,4 +1,4 @@
-@import "config";
+@import 'config';
 
 .events {
   @include margin-bottom-2-rem;
@@ -36,6 +36,8 @@
   }
 
   .card {
+    @include transform300ms;
+
     bottom: 0;
     display: flex;
     left: 0;
@@ -43,11 +45,6 @@
     right: 0;
     top: 0;
     transform-style: preserve-3d;
-    transition: transform 300ms ease-in-out;
-  }
-
-  :hover .card {
-    transform: rotateY(180deg);
   }
 
   .face {
@@ -78,4 +75,8 @@
     height: 100%;
     justify-content: space-between;
   }
+}
+
+.event:hover .card {
+  transform: rotateY(180deg);
 }

@@ -1,4 +1,4 @@
-@import "config";
+@import 'config';
 
 * {
   box-sizing: border-box;
@@ -7,20 +7,20 @@
 }
 
 body {
-  color: $Grey222;
+  color: $grey222;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-size: 16px;
 }
 
 a {
-  color: $Grey222;
+  color: $grey222;
 }
 
 button {
-  background-color: $Grey222;
-  border: 1px solid $Black000;
+  background-color: $grey222;
+  border: 1px solid $black000;
   border-radius: 5px;
-  color: $eeeWhite;
+  color: $white-eee;
   padding: 0.5rem;
   transition:
     color 300ms ease-in-out,
@@ -28,14 +28,14 @@ button {
   word-break: initial;
 
   &:hover {
-    background-color: $eeeWhite;
-    color: $Grey222;
+    background-color: $white-eee;
+    color: $grey222;
   }
 
   &:active {
-    background-color: $Grey222;
-    border: 1px solid $Black000;
-    color: $eeeWhite;
+    background-color: $grey222;
+    border: 1px solid $black000;
+    color: $white-eee;
   }
 }
 

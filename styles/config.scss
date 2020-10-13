@@ -15,9 +15,9 @@ $grid12: 100%;
 
 $book-color: #ccc;
 $book-content: #999;
-$eeeWhite: #eee;
-$Grey222: #222;
-$Black000: #000;
+$white-eee: #eee;
+$grey222: #222;
+$black000: #000;
 
 @mixin margin-bottom-1-rem {
   margin-bottom: 1rem;
@@ -25,4 +25,8 @@ $Black000: #000;
 
 @mixin margin-bottom-2-rem {
   margin-bottom: 1rem;
+}
+
+@mixin transform300ms {
+  transition: transform 300ms ease-in-out;
 }
