@@ -18,7 +18,7 @@
     overflow: hidden; }
   .book .image img {
     transition: transform 300ms ease-in-out;
-    height: 200px;
+    height: 201px;
     object-fit: cover;
     width: 100%; }
   .book h3 {
